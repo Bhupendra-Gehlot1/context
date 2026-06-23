@@ -1,6 +1,6 @@
-import { questionRepository } from '../repositories/QuestionRepository';
-import type { Question } from '../models';
-import type { RealtimeChannel } from '@supabase/supabase-js';
+import { questionRepository } from "../repositories/QuestionRepository";
+import type { Question } from "../models";
+import type { RealtimeChannel } from "@supabase/supabase-js";
 
 export class ReminderService {
   async loadOpenQuestions(): Promise<Question[]> {

@@ -1,5 +1,5 @@
-import { buildSummary } from '../utils';
-import type { Message, ConversationSummary } from '../models';
+import { buildSummary } from "../utils";
+import type { Message, ConversationSummary } from "../models";
 
 export class SummaryService {
   generate(messages: Message[]): ConversationSummary {

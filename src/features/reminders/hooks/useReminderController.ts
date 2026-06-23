@@ -1,6 +1,6 @@
-import { useEffect, useState, useCallback } from 'react';
-import { reminderService } from '../../../core/services/ReminderService';
-import type { Question } from '../../../core/models';
+import { useEffect, useState, useCallback } from "react";
+import { reminderService } from "../../../core/services/ReminderService";
+import type { Question } from "../../../core/models";
 
 export function useReminderController() {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -13,7 +13,7 @@ export function useReminderController() {
       setQuestions(data);
       setError(null);
     } catch {
-      setError('Failed to load questions');
+      setError("Failed to load questions");
     } finally {
       setLoading(false);
     }

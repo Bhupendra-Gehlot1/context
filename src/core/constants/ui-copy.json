@@ -3,18 +3,18 @@
     "close": "Close"
   },
   "app": {
-    "title": "Smart Team Chat",
-    "tagline": "Lightweight chat for small teams"
+    "title": "Context",
+    "tagline": "Stay aligned without scrolling"
   },
   "join": {
-    "title": "Join the conversation",
+    "title": "Join Context",
     "subtitle": "Enter your display name to join the shared team room",
     "placeholder": "Your display name",
-    "button": "Join Chat",
+    "button": "Get Context",
     "validation": "Please enter a display name"
   },
   "chat": {
-    "title": "Smart Team Chat",
+    "title": "Context",
     "placeholder": "Type a message...",
     "onlineUsers": "users online",
     "send": "Send",

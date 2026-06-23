@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { UI_COPY } from '../../../core/constants/ui-copy';
-import { Button } from '../../../shared/components/Button';
+import { useState } from "react";
+import { UI_COPY } from "../../../core/constants/ui-copy";
+import { Button } from "../../../shared/components/Button";
 
 interface Props {
   sending: boolean;
@@ -9,13 +9,13 @@ interface Props {
 }
 
 export function MessageInput({ sending, onSend, onTyping }: Props) {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   const submit = async () => {
     const trimmed = value.trim();
     if (!trimmed || sending) return;
     await onSend(trimmed);
-    setValue('');
+    setValue("");
   };
 
   const isEmpty = !value.trim();
@@ -32,7 +32,7 @@ export function MessageInput({ sending, onSend, onTyping }: Props) {
           onTyping();
         }}
         onKeyDown={(e) => {
-          if (e.key === 'Enter' && !e.shiftKey) {
+          if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault();
             submit();
           }

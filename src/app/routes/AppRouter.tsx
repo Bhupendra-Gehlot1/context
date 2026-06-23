@@ -1,9 +1,9 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { UserProvider, useUser } from '../providers/UserProvider';
-import { PresenceProvider } from '../providers/PresenceProvider';
-import { ROUTES } from '../../core/constants/routes';
-import JoinView from '../../features/chat/view/JoinView';
-import ChatView from '../../features/chat/view/ChatView';
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { UserProvider, useUser } from "../providers/UserProvider";
+import { PresenceProvider } from "../providers/PresenceProvider";
+import { ROUTES } from "../../core/constants/routes";
+import JoinView from "../../features/chat/view/JoinView";
+import ChatView from "../../features/chat/view/ChatView";
 
 function ProtectedChatRoute() {
   const { userName } = useUser();

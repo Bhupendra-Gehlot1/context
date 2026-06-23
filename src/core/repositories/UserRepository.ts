@@ -1,11 +1,14 @@
-import { supabase } from '../api/supabase';
-import type { User } from '../models';
+import { supabase } from "../api/supabase";
+import type { User } from "../models";
 
 export class UserRepository {
   async upsertUser(id: string, userName: string): Promise<User> {
     const { data, error } = await supabase
-      .from('users')
-      .upsert({ id, user_name: userName, last_seen: new Date().toISOString() }, { onConflict: 'id' })
+      .from("users")
+      .upsert(
+        { id, user_name: userName, last_seen: new Date().toISOString() },
+        { onConflict: "id" },
+      )
       .select()
       .single();
 
@@ -15,9 +18,9 @@ export class UserRepository {
 
   async updateLastSeen(id: string): Promise<void> {
     const { error } = await supabase
-      .from('users')
+      .from("users")
       .update({ last_seen: new Date().toISOString() })
-      .eq('id', id);
+      .eq("id", id);
 
     if (error) throw error;
   }

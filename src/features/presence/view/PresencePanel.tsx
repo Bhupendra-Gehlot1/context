@@ -1,8 +1,8 @@
-import { usePresenceController } from '../hooks/usePresenceController';
-import { UI_COPY } from '../../../core/constants/ui-copy';
-import { Avatar } from '../../../shared/components/Avatar';
-import { EmptyState } from '../../../shared/empty-states/EmptyState';
-import { useUser } from '../../../app/providers/UserProvider';
+import { usePresenceController } from "../hooks/usePresenceController";
+import { UI_COPY } from "../../../core/constants/ui-copy";
+import { Avatar } from "../../../shared/components/Avatar";
+import { EmptyState } from "../../../shared/empty-states/EmptyState";
+import { useUser } from "../../../app/providers/UserProvider";
 
 export function PresencePanel() {
   const { onlineUsers } = usePresenceController();
@@ -12,7 +12,10 @@ export function PresencePanel() {
 
   return (
     <section aria-labelledby="presence-heading">
-      <h3 id="presence-heading" className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400">
+      <h3
+        id="presence-heading"
+        className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400"
+      >
         {UI_COPY.presence.title} ({onlineUsers.length})
       </h3>
 
@@ -26,10 +29,15 @@ export function PresencePanel() {
               <span className="text-sm text-slate-200">
                 {u.user_name}
                 {u.user_id === userId && (
-                  <span className="ml-1 text-xs text-slate-500">({UI_COPY.chat.you})</span>
+                  <span className="ml-1 text-xs text-slate-500">
+                    ({UI_COPY.chat.you})
+                  </span>
                 )}
               </span>
-              <span className="ml-auto h-2 w-2 rounded-full bg-emerald-400" aria-label="Online" />
+              <span
+                className="ml-auto h-2 w-2 rounded-full bg-emerald-400"
+                aria-label="Online"
+              />
             </li>
           ))}
         </ul>

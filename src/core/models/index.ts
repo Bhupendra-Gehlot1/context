@@ -16,7 +16,7 @@ export interface Question {
   message_id: string;
   content: string;
   asked_by: string;
-  status: 'open' | 'answered';
+  status: "open" | "answered";
   created_at: string;
 }
 

@@ -1,15 +1,18 @@
-import { useReminderController } from '../hooks/useReminderController';
-import { UI_COPY } from '../../../core/constants/ui-copy';
-import { Loader } from '../../../shared/loaders/Loader';
-import { EmptyState } from '../../../shared/empty-states/EmptyState';
-import { formatRelativeTime } from '../../../core/utils';
+import { useReminderController } from "../hooks/useReminderController";
+import { UI_COPY } from "../../../core/constants/ui-copy";
+import { Loader } from "../../../shared/loaders/Loader";
+import { EmptyState } from "../../../shared/empty-states/EmptyState";
+import { formatRelativeTime } from "../../../core/utils";
 
 export function ReminderPanel() {
   const { questions, loading } = useReminderController();
 
   return (
     <section aria-labelledby="reminders-heading">
-      <h3 id="reminders-heading" className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400">
+      <h3
+        id="reminders-heading"
+        className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400"
+      >
         {UI_COPY.reminders.title} ({questions.length})
       </h3>
 

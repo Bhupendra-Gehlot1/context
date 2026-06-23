@@ -1,6 +1,6 @@
-import { createContext, useContext, useState, type ReactNode } from 'react';
-import { STORAGE_KEYS } from '../../core/constants/storage-keys';
-import { generateId } from '../../core/utils';
+import { createContext, useContext, useState, type ReactNode } from "react";
+import { STORAGE_KEYS } from "../../core/constants/storage-keys";
+import { generateId } from "../../core/utils";
 
 interface UserContextValue {
   userName: string | null;
@@ -43,6 +43,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
 export function useUser(): UserContextValue {
   const ctx = useContext(UserContext);
-  if (!ctx) throw new Error('useUser must be used within UserProvider');
+  if (!ctx) throw new Error("useUser must be used within UserProvider");
   return ctx;
 }
