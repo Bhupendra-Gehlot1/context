@@ -1,4 +1,4 @@
-# Smart Team Chat
+# Context - Smart Team Chat
 
 A lightweight real-time team chat application built with React, TypeScript, and Supabase.
 
@@ -17,7 +17,7 @@ To address those problems, the application includes:
 
 ### Live Demo
 
-https://smart-team-chat-app.netlify.app
+https://get-context.netlify.app/
 
 ---
 
