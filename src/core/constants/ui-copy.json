@@ -1,0 +1,58 @@
+{
+  "common": {
+    "close": "Close"
+  },
+  "app": {
+    "title": "Smart Team Chat",
+    "tagline": "Lightweight chat for small teams"
+  },
+  "join": {
+    "title": "Join the conversation",
+    "subtitle": "Enter your display name to join the shared team room",
+    "placeholder": "Your display name",
+    "button": "Join Chat",
+    "validation": "Please enter a display name"
+  },
+  "chat": {
+    "title": "Smart Team Chat",
+    "placeholder": "Type a message...",
+    "onlineUsers": "users online",
+    "send": "Send",
+    "noMessages": "No messages yet. Start the conversation!",
+    "loadingMessages": "Loading messages...",
+    "reconnecting": "Reconnecting...",
+    "connected": "Connected",
+    "you": "You"
+  },
+  "summary": {
+    "title": "Catch Me Up",
+    "button": "Catch Me Up",
+    "loading": "Summarizing...",
+    "noMessages": "No messages to summarize yet.",
+    "participants": "Participants",
+    "topics": "Topics Discussed",
+    "recentActivity": "Recent Activity",
+    "openQuestions": "Open Questions",
+    "noTopics": "No specific topics detected",
+    "noActivity": "No recent activity",
+    "messagesAnalyzed": "messages analyzed"
+  },
+  "reminders": {
+    "title": "Open Questions",
+    "empty": "No open questions right now.",
+    "awaitingResponse": "Awaiting Response",
+    "answered": "Answered",
+    "loading": "Loading questions..."
+  },
+  "presence": {
+    "title": "Online Now",
+    "empty": "No one else online",
+    "typing": "is typing...",
+    "typingMultiple": "people are typing..."
+  },
+  "errors": {
+    "sendFailed": "Failed to send message. Try again.",
+    "loadFailed": "Failed to load messages.",
+    "connectionLost": "Connection lost. Reconnecting..."
+  }
+}
