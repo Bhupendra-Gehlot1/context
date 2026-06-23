@@ -1,4 +1,4 @@
-# Context - Smart Team Chat
+# Context - Stay aligned without scrolling
 
 A lightweight real-time team chat application built with React, TypeScript, and Supabase.
 
